@@ -7,5 +7,6 @@ let app = http.createServer(function (req, res) {
   res.end()
 })
 
-app.listen(8000)
-console.log('web application started at http://localhost:8000')
+const PORT = 8000
+app.listen(PORT)
+console.log('web application started at http://localhost:' + PORT)
