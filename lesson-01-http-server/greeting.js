@@ -4,7 +4,8 @@ let http = require('http')
 
 let app = http.createServer(function (req, res) {
   console.log('got a request for ' + req.url + ' from ' + req.headers['user-agent'])
-  res.end()
+  res.writeHead(200, {'Content-Type': 'text/plain'})
+  res.end('hello world!')
 })
 
 const PORT = 8000
