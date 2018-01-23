@@ -1,6 +1,6 @@
 'use strict'
 
-let http = require('http')
+import http from 'http'
 
 let app = http.createServer(function (req, res) {
   console.log('got a request for ' + req.url + ' from ' + req.headers['user-agent'])
