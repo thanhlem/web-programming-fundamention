@@ -1,6 +1,6 @@
 'use strict'
 
-let http = require('http');
+let http = require('http')
 let app = http.createServer(function (req, res) {
   console.log('got a request for' + req.url + 'from' + req.headers['user-agent'])
   let content = '<h1>Hello World!</h1>'
