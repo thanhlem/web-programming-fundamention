@@ -2,7 +2,7 @@
 
 let http = require('http')
 
-let app = http.createServer(function (req, res) {
+let app = http.createServer((req, res) => {
   console.log('got a request for ' + req.url + ' from ' + req.headers['user-agent'])
   let content = '<h2>hello world!</h2>'
   if (req.url.toLowerCase() === '/about') {
