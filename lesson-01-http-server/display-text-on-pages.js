@@ -15,10 +15,10 @@ let app = http.createServer(function (req, res) {
   }
   let time = new Date()
   if (req.url === '/chat?username=BinhSon&ask=time') {
-    content = 'Hello, BinhSon. It is ' +time + 'now'
+    content = 'Hello, BinhSon. It\'s ' +time +' now'
   }
   if (req.url === '/chat?ask=time') {
-    content = 'It is ' + time + 'now'
+    content = 'It\'s ' +time + ' now'
   }
 
   res.writeHead(200, {'Content-Type': 'text/html'})
