@@ -13,12 +13,11 @@ let app = http.createServer(function (req, res) {
   if (req.url === '/chat?username=BinhSon'){
     content = 'Hello, BinhSon'
   }
+  let time = new Date()
   if (req.url === '/chat?username=BinhSon&ask=time') {
-    let time = new Date()
     content = 'Hello, BinhSon. It is ' +time + 'now'
   }
   if (req.url === '/chat?ask=time') {
-    let time = new Date()
     content = 'It is ' + time + 'now'
   }
 
